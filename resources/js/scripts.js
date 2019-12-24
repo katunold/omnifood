@@ -81,4 +81,19 @@ $(document).ready(function () {
   }, {
     offset: '50%'
   });
+
+  //  Mobile nav
+  $('.js--nav-icon').click(function () {
+    const nav = $('.js--main-nav');
+    const icon = $('.js--nav-icon ion-icon');
+    nav.slideToggle(200);
+    if (icon.hasName('menu')) {
+      icon.addName('close');
+      icon.removeName('menu')
+    } else {
+      icon.addName('menu');
+      icon.removeName('close')
+    }
+  });
+
 });
