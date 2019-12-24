@@ -258,6 +258,19 @@ header {
     z-index: 9999;
 }
 
+/* Mobile nav */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #ffffff;
+}
+
 .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
