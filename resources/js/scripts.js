@@ -83,17 +83,27 @@ $(document).ready(function () {
   });
 
   //  Mobile nav
-  $('.js--nav-icon').click(function () {
-    const nav = $('.js--main-nav');
-    const icon = $('.js--nav-icon ion-icon');
-    nav.slideToggle(200);
-    if (icon.hasName('menu')) {
-      icon.addName('close');
-      icon.removeName('menu')
-    } else {
-      icon.addName('menu');
-      icon.removeName('close')
-    }
+  $(function () {
+    const icon1 = $('.js--nav-icon-close');
+    icon1.hide();
   });
+
+  $('.js--nav-icon-menu').click(function () {
+    const nav = $('.js--main-nav');
+    nav.slideToggle(200);
+    const icon = $('.js--nav-icon-menu');
+    const icon1 = $('.js--nav-icon-close');
+    icon.hide();
+    icon1.show();
+  });
+
+  $('.js--nav-icon-close').click(function () {
+    const nav = $('.js--main-nav');
+    nav.slideToggle(200);
+    const icon = $('.js--nav-icon-menu');
+    const icon1 = $('.js--nav-icon-close');
+    icon.show();
+    icon1.hide();
+  })
 
 });

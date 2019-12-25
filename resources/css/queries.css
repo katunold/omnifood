@@ -47,6 +47,10 @@
     }
     .main-nav { display: none}
     .mobile-nav-icon { display: inline-block}
+    .sticky .mobile-nav-icon ion-icon {
+        font-size: 200%;
+        color: #555555;
+    }
     .main-nav {
         float: left;
         margin-top: 25px;
